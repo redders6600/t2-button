@@ -16,8 +16,8 @@ var Button     = require('t2-button');
 var buttonPin  = tessel.port.A.pin[0];
 var greenLight = tessel.led[2];
 
-var pushButton = Object.create(Button)
-;
+var pushButton = Object.create(Button);
+
 pushButton
 .listen({ frequency: 100, pin: buttonPin })
 .on('press', function () {
